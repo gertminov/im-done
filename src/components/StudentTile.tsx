@@ -13,7 +13,7 @@ function StudentTile({student}:props) {
     const tileCSS = `aspect-square w-full grid place-items-center rounded-md ${student.done?"bg-green-400":"bg-red-400"}`
     return (
         <div className={tileCSS}>
-            <p>{student.name}</p>
+            <p className="text-white">{student.name}</p>
         </div>
     );
 }
